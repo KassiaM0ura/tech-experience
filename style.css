@@ -1,0 +1,60 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  margin: 0;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2f5d6b;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+form {
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+label { display: block; margin: .8rem 0 .3rem; }
+input[type="text"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: .6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: 3px solid #5b9bb0;
+}
+
+button {
+  margin-top: 1rem;
+  padding: .7rem 1.2rem;
+  background: #2f5d6b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover { background: #244853; }
+
+.is-invalid { border: 2px solid #c0392b; }
+.error-message { color: #c0392b; font-size: .9rem; }
+
+@media (max-width: 600px) {
+  form { padding: 1rem; }
+}
